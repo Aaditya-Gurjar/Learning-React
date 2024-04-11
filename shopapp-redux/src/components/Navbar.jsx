@@ -12,15 +12,15 @@ function Navbar() {
         </div>
       </NavLink>
       <div>
-          <NavLink to="/">
-            <p>HOME</p>
-          </NavLink>
-          
-          <NavLink to="/cart">
+        <NavLink to="/">
+          <p>HOME</p>
+        </NavLink>
+
+        <NavLink to="/cart">
           <div>
             <BsCartCheckFill />
           </div>
-          </NavLink>
+        </NavLink>
       </div>
     </div>
   );
