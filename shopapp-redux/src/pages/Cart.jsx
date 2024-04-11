@@ -14,13 +14,17 @@ function Cart() {
   return (
     <div>
       {cart.length > 0 ? (
-        <div>
-          <div>
+        <div className="flex max-w-6xl mx-auto justify-between items-center ">
+           
+           <div className="flex  justify-center ">
+           <div>
             {cart.map((item, index) => {
               return <CartItem key={item.id} item={item} itemIndex={index} />;
             })}
           </div>
+           </div>
 
+          <div>
           <div>
             <div>Your Cart</div>
             <div>Summary</div>
@@ -33,12 +37,13 @@ function Cart() {
             <div><p>Total Amount : {totalAmount}</p></div>
             <button>CheckOut Now</button>
           </div>
+          </div>
         </div>
       ) : (
         <div>
           <h1>Empty</h1>
-          <Link to={"/"}>
-            <button>Shop Now</button>
+          <Link  className="h-screen w-screen" to={"/"}>
+            <button className=" bg-blue-500 rounded flex justify-center items-center">Shop Now</button>
           </Link>
         </div>
       )}
